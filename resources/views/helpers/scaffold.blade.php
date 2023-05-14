@@ -513,8 +513,8 @@
         function writeModel(val) {
             $model.val(modelNamespace + ucfirst(ucfirst(toHump(toLine(val)))));
         }
-            $repository.val(repositoryNamespace + ucfirst(ucfirst(toHump(toLine(val)))))
         function writeRepository(val) {
+            $repository.val(repositoryNamespace + ucfirst(ucfirst(toHump(toLine(val)))) + 'Repository')
         }
 
         function getTR() {
