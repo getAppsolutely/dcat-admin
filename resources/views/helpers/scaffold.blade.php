@@ -317,7 +317,7 @@
                 success: function (data) {
                     writeController(data.value);
                     writeModel(data.value);
-                    witeRepository(data.value);
+                    writeRepository(data.value);
                 }
             });
         }, 500);
@@ -513,8 +513,8 @@
         function writeModel(val) {
             $model.val(modelNamespace + ucfirst(ucfirst(toHump(toLine(val)))));
         }
-        function witeRepository(val) {
             $repository.val(repositoryNamespace + ucfirst(ucfirst(toHump(toLine(val)))))
+        function writeRepository(val) {
         }
 
         function getTR() {
